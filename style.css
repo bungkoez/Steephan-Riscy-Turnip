@@ -1,0 +1,186 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    background-image: url(head.jpg);
+    background-position: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #495057;
+}
+
+nav ul li a.active {
+    background-color: #6c757d;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.photos {
+    display: inline;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 30px; 
+}
+
+.photos img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 0%; 
+    transition: transform 0.3s ease; 
+}
+
+.photos img:hover {
+    transform: scale(1.1); 
+}
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    width: 250px;
+    height: 300px;
+    border-radius: 20%;
+    margin-bottom: 10px;
+    border: radius 50%; 
+    transition: transform 0.3s ease; 
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #e9e7e7;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4d5feb;
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; 
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.social-media li:last-child {
+    margin-right: 0; 
+}
+
+.social-media img {
+    width: 40px; 
+    height: 40px; 
+}
+
+/* Media screen styling */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: inline-block;
+    }
+
+    main {
+        padding-top: 20px;
+    }
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .content ul.social-media {
+        text-align: center;
+        padding: 0;
+    }
+
+    .content ul.social-media li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
